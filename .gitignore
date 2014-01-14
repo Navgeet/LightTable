@@ -7,6 +7,11 @@ deploy/plugins
 deploy/node-webkit*
 deploy/core/cache
 deploy/logs
+deploy/LightTable
+deploy/credits.html
+deploy/libffmpegsumo.so
+deploy/ltbin
+deploy/nw.pak
 .DS_Store
 deploy/core/node_modules/lighttable/bootstrap.js*
 .lein-deps-sum
