@@ -73,6 +73,7 @@
 
 (defn download-file [from to cb]
   (let [options (js-obj "url" from
+                        "proxy" "http://10.3.100.212:8080"
                         "headers" (js-obj "User-Agent" "Light Table"))
         out (.createWriteStream fs to)]
     (.pipe (request options cb) out)))

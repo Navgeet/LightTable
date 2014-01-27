@@ -166,6 +166,7 @@
 
 (defn fetch-and-install [url name cb]
   (let [munged-name (munge-plugin-name name)
+        url (clojure.string/replace url "https://github.com/repos" "http://github.com")
         tmp-gz (str user-plugins-dir "/" munged-name "-tmp.tar.gz")
         tmp-dir (str user-plugins-dir "/" munged-name "-tmp")]
     (notifos/working (str "Downloading plugin: " name))
